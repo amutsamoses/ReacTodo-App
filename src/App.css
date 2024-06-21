@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+:root {
+  --bright-blue: hsl(220, 98%, 61%);
+  --check-bg-start: hsl(192, 100%, 67%);
+  --check-bg-end: hsl(280, 87%, 65%);
+
+  /* Light Theme Colors */
+  --very-light-gray: hsl(0, 0%, 98%);
+  --very-light-grayish-blue: hsl(236, 33%, 92%);
+  --light-grayish-blue: hsl(233, 11%, 84%);
+  --dark-grayish-blue: hsl(236, 9%, 61%);
+  --very-dark-grayish-blue: hsl(235, 19%, 35%);
+
+  /* Dark Theme Colors */
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --light-grayish-blue-hover: hsl(236, 33%, 92%);
+  --dark-grayish-blue-hover: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue-hover: hsl(233, 14%, 35%);
+  --very-dark-grayish-blue-lighter: hsl(237, 14%, 26%);
+}
+
+/* Global Styles */
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--very-dark-blue);
+  background-image: url("./images/bg-desktop-dark.jpg"); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  color: var(--light-grayish-blue);
+  transition: color 0.3s;
+}
+
+/* Dark Theme only since design is inherently dark */
+body.dark {
+  color: var(--light-grayish-blue-hover);
+}
+
+.app-header {
+  background: none; /* No background to allow image visibility */
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--bright-blue);
+}
+
+input[type="text"],
+button {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 10px;
+  margin: 5px;
+  background: var(
+    --very-light-grayish-blue
+  ); /* Light background for input and buttons */
+  border: none;
+  color: var(--very-dark-grayish-blue);
+}
+
+.todo-item {
+  background: var(
+    --light-grayish-blue
+  ); /* Slightly different background for contrast */
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  color: var(--very-dark-grayish-blue);
+}
+
+.todo-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--bright-blue);
+}
+
+.todo-actions button svg {
+  fill: var(--bright-blue);
+}
+
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.input-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
+  background: #191d3a;
+  color: #ffffff;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #8a2be2;
+  color: white;
+  cursor: pointer;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.todo-item {
+  background: #25294a;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button:hover {
+  background-color: #7b1fa2;
+}
+/* Responsive Layout */
+@media (min-width: 375px) and (max-width: 1440px) {
+  .app {
+    padding: 20px;
+  }
+}
