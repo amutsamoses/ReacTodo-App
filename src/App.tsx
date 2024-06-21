@@ -95,7 +95,7 @@ const App: React.FC = () => {
         </button>
       </div>
       <div className="todo-list">
-        {todos.map((todo, _index) => (
+        {todos.map((todo) => (
           <div key={todo.id} className="todo-item">
             <input
               type="checkbox"
