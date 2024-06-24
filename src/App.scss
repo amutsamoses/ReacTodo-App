@@ -1,0 +1,154 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Global App Styles */
+.app {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #504949;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.container {
+  background-color: transparent;
+  text-align: center;
+  padding: 10px 20px;
+  background-image: url("../images/bg-desktop-dark.jpg");
+  h1 {
+    color: #fff;
+  }
+}
+
+/* Footer Styles */
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: transparent;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  font-size: 14px;
+
+  span {
+    color: #fff;
+  }
+
+  button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+
+    &:hover {
+      color: #5d98fc;
+    }
+  }
+}
+
+/* Todo Form Styles */
+.todo-form {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  .todo-input {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    outline: none;
+    font-size: 16px;
+    color: #666;
+
+    &::placeholder {
+      color: #ccc;
+    }
+  }
+}
+
+/* Todo List Styles */
+.todo-list {
+  list-style: none;
+  padding: 0;
+
+  .todo-item {
+    background-color: #332f2f;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.completed {
+      text-decoration: line-through;
+      color: #ccc;
+    }
+
+    input {
+      padding: 5px 10px;
+      border-radius: 3px;
+      border: 1px solid #ddd;
+    }
+
+    button {
+      padding: 5px 10px;
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #23a149;
+      }
+    }
+  }
+}
